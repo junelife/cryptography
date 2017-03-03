@@ -40,8 +40,6 @@ int BN_dec2bn(BIGNUM **, const char *);
 int BN_bn2bin(const BIGNUM *, unsigned char *);
 BIGNUM *BN_bin2bn(const unsigned char *, int, BIGNUM *);
 
-int BN_bn2binpad(const BIGNUM *a, unsigned char *to, int tolen);
-
 int BN_num_bits(const BIGNUM *);
 
 int BN_cmp(const BIGNUM *, const BIGNUM *);
