@@ -31,7 +31,7 @@ BIGNUM *SRP_Calc_client_key(BIGNUM *N, BIGNUM *B, BIGNUM *g, BIGNUM *x,
                             BIGNUM *a, BIGNUM *u);
 int SRP_Verify_B_mod_N(BIGNUM *B, BIGNUM *N);
 
-
+int BN_bn2binpad(const BIGNUM *a, unsigned char *to, int tolen);
 """
 
 TYPES = """
