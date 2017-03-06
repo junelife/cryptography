@@ -11,6 +11,7 @@ INCLUDES = """
 
 FUNCTIONS = """
 SRP_gN *SRP_get_default_gN(const char *id);
+char *SRP_check_known_gN_param(BIGNUM *g, BIGNUM *N);
 
 char *SRP_create_verifier(const char *user, const char *pass, char **salt,
                           char **verifier, const char *N, const char *g);
