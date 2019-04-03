@@ -86,6 +86,7 @@ ffi = build_ffi_for_binding(
         "pkcs12",
         "rand",
         "rsa",
+        "srp",
         "ssl",
         "x509",
         "x509name",

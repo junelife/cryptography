@@ -69,6 +69,19 @@ int BN_mod_exp_mont_consttime(BIGNUM *, const BIGNUM *, const BIGNUM *,
                               const BIGNUM *, BN_CTX *, BN_MONT_CTX *);
 BIGNUM *BN_mod_inverse(BIGNUM *, const BIGNUM *, const BIGNUM *, BN_CTX *);
 
+
+int BN_set_bit(BIGNUM *, int);
+int BN_clear_bit(BIGNUM *, int);
+
+int BN_is_bit_set(const BIGNUM *, int);
+
+int BN_mask_bits(BIGNUM *, int);
+
+int BN_rand(BIGNUM *rnd, int bits, int top, int bottom);
+"""
+
+MACROS = """
+
 int BN_num_bytes(const BIGNUM *);
 
 int BN_mod(BIGNUM *, const BIGNUM *, const BIGNUM *, BN_CTX *);
